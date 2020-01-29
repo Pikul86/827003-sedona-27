@@ -2,60 +2,95 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="style.css">
   </head>
+
+
   <body>
-<header>
-      <img src="#" width="" height="" alt="Логотип города Седона">
+<header class="main-header">
+      <h1>Город Седона</h1>
+      <img src="img/logo-sedona.svg" width="140"; height="72"; alt="Логотип города Седона">
   <nav>
     <ul>
-        <li><a href='#'>Информация</a></li>
-        <li><a href='#'>Фото и видео</a></li>
-        <li><a href='#'>Карта штата</a></li>
-        <li><a href='#'>Гостиницы</a></li>
+        <li class="block"><a href='#'>Информация</a></li>
+        <li class="block"><a href='#'>Фото и видео</a></li>
+        <li class="block block1"></li>
+        <li class="block"><a href='#'>Карта штата</a></li>
+        <li class="block"><a href='#'>Гостиницы</a></li>
     </ul>
   </nav>
 </header>
 <main>
-    <section>
-      <h1>Седона — небольшой городок в Аризоне, <br> <span>заслуживающий большего!</span></h1>   
+  <section class="sedona">
+      <h1>Седона</h1>   
       <p>
-        <img src="#" alt="Добро пожаловать в джорджию">    
+        <img src="img/background_photo.jpg" width="1200px"; height="800px"; alt="Добро пожаловать в Джорджию">    
+      </p> 
+      <p>
+        <img src="img/intro-welcome.svg" width="459px"; height="353px"; alt="Добро пожаловать в джорджию">   <!--картинка Welcom-->
       </p>
+      <p><img src="img/intro-mask.svg" width="1200px" height="59px"; alt="Маска для логотипа Седона"></p>
+
+
+      Седона — небольшой городок в Аризоне, <br> <span>заслуживающий большего!</span>
       <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-    </section>
+  </section>
+
+
+
+
+
+
+
+
 
     <section>
-      <h2>Настоящий<br><span>городок</span>></h2>
+      <h2>Настоящий<br><span>городок</span></h2>
       <p>— №1 —</p>
       <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-      <img src="#" alt="фото города Седона">  
+      <img src="img/city.jpg" alt="фото города Седона">  
   </section>
+
+
+
+
+
+
+
   <section>
     <h2>Описание</h2>
     <ul>
         <li>
-            <img src="#" alt="Картинка дома">  
+            <img src="img/icon-1.svg" alt="Картинка дома">  
             <h3>Жильё</h3>
             <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
         </li>
         <li>
-          <img src="#" alt="Картинка бургера"> 
+          <img src="img/icon-2.svg" alt="Картинка бургера"> 
           <h3>Еда</h3>
           <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
         </li>
         <li>
-            <img src="#" alt="Подарок">  
+            <img src="img/icon-3.svg" alt="Подарок">  
             <h3>Сувениры</h3>
             <p>Не только китайского, но и местного производства!</p> 
         </li>
     </ul>
   </section>
   
+
+
+
+
+
+
+
+
+
   <section>
     <div>
-      <img src="#" alt="Фото КАНЬОН"> 
+      <img src="img/bridge.jpg" alt="Фото КАНЬОН"> 
     </div>
     <div>
         <h2>Там есть<br><span class="perenos">мост дьявола</span></h2>
@@ -63,6 +98,11 @@
         <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
     </div>
   </section>
+
+
+
+
+
   <section>
     <h2>Преимущества</h2>
   <ul>
@@ -90,6 +130,7 @@
     <button>ПОИСК ГОСТИНИЦЫ В седоне</button>
     <!--Здесь будет форма поиска-->
 </section>
+<p><img src="img/map.jpg" alt="Карта Седоны"></p>   <!--Узнать как потом карту сделать в javascript-->
 </main>
 
 <footer>
@@ -99,13 +140,13 @@
   <p>Тел: +7(495) 666-02-66</p>
   <div>
     <ul>
-      <li><a href="#">Твиттер</a></li>
-      <li><a href="#">Фейсбук</a></li>
-      <li><a href="#">Ютуб</a></li>
+      <li><a href="#"><img src="img/twitter.svg" alt="">Твиттер</a></li> 
+      <li><a href="#"><img src="img/fb-icon.svg" alt="">Фейсбук</a></li>
+      <li><a href="#"><img src="img/youtube.svg" alt="">Ютуб</a></li>
     </ul>
   </div>
 <p>Website by</p>
-<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="#" alt="Логотип Академии"></a>
+<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="115px"; height="41px";alt="Логотип Академии"></a>
 </footer>
   </body>
 </html>
