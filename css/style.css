@@ -1,0 +1,43 @@
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+
+
+.date-arrival {
+    width: 346px;
+    height: 38px;
+    background-color: #f2f2f2;
+  }
+.date-departure {
+    width: 346px;
+    height: 38px;
+    background-color: #f2f2f2;
+}
+
+.button-search {
+    width: 568px;
+    height: 86px;
+    background-color: #766357;
+}
+ 
+
+/*кнопки в форме поиска жилья*/
+.svg-button {
+    width: 38px;
+    height: 38px;
+}
+
+/*перенести в отдельный файл css для каталога*/
+.search-catalog {
+    width: 314px;
+    height: 32px;
+    border: 2px solid #ffffff;
+}

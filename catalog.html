@@ -17,52 +17,63 @@
         <li><a href='#'>Карта штата</a></li>
         <li><a href='#'>Гостиницы</a></li>
       </ul>
-  </nav>
-</header>
-<main>
-<section>
-    <h2>Параметры</h2>
-    <img src="img/filter _background.jpg" width="1200" height="562" alt="Фон параметров поиска">
-    <ul>
-      <li>Инфраструктура:</li>
-      <li>
-        <input type="checkbox" name="pool" id="pool-field" checked>
-        <label for="pool-field">Бассейн</label>
-      </li>
-      <li>
-        <input type="checkbox" name="parking" id="parking-field">
-        <label for="parking-field">Парковка</label>
-      </li>
-      <li>
-        <input type="checkbox" name="wifi" id="wifi-field">
-        <label for="wifi-field">Wi-Fi</label></li>
-    </ul>
-    <ul>
-      <li>Тип жилья:</li>
-      <li>
-        <input type="checkbox" name="hotel" id="hotel-field" checked>
-        <label for="hotel-field">Гостиница</label>
-      </li>
-      <li>
-        <input type="checkbox" name="motel" id="motel-field" checked>
-        <label for="motel-field">Мотель</label>
-      </li>
-      <li>
-        <input type="checkbox" name="appartment" id="appartment-field" checked>
-        <label for="appartment-field">Апартаменты</label>
-      </li>
-    </ul>
-    <p>Стоимость в сутки (Р):</p>
-    <!--Форма выставления суммы-->
-</section>
-
-
-  <section>
-    <h2>Результаты поиска</h2>
-    <ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2 class="visually-hidden">Параметры</h2>
+      <img src="img/filter _background.jpg" width="1200" height="562" alt="Фон параметров поиска">
+      <fieldset>
+        <legend>Инфраструктура:</legend>
+        <ul>
+          <li>
+            <input type="checkbox" name="pool" id="pool-field" checked>
+            <label for="pool-field">Бассейн</label>
+          </li>
+          <li>
+            <input type="checkbox" name="parking" id="parking-field">
+            <label for="parking-field">Парковка</label>
+          </li>
+          <li>
+            <input type="checkbox" name="wifi" id="wifi-field">
+            <label for="wifi-field">Wi-Fi</label></li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>Тип жилья:</legend>
+        <ul>
+          <li>
+            <input type="checkbox" name="hotel" id="hotel-field" checked>
+            <label for="hotel-field">Гостиница</label>
+          </li>
+          <li>
+            <input type="checkbox" name="motel" id="motel-field" checked>
+            <label for="motel-field">Мотель</label>
+          </li>
+          <li>
+            <input type="checkbox" name="appartment" id="appartment-field" checked>
+            <label for="appartment-field">Апартаменты</label>
+          </li>
+        </ul>
+      </fieldset>
+      <p>Стоимость в сутки (Р):</p>
+      <!--Форма выставления суммы-->
+      <form action="">
+        <div class="search-catalog">
+          <p>От 0</p>
+          <svg>
+            <line x1="19" y1="13" x2="19" y2="25" stroke="gray" stroke-width="3" />
+          </svg>
+          <p>До 3000</p>
+        </div>
+        <input type="range" min="0" max="10000" step="100">
+      </form>
+    </section>
+    <section>
+      <h2>Результаты поиска</h2>
+      <ul>
         <li>
-          <h2>Найдено:</h2>
-          <!--Тут должен быть вывод поиска колличество-->
+          <h2>Найдено: 3</h2>
         </li>
         <li>
           <p>Сортировка:</p>
@@ -78,11 +89,12 @@
         </li>
       </ul>
       <p>
-        <img src="img/icon-up-dir.svg" alt="Стрелочка вверх">
-      </p>
-      <p>
-        <img src="img/icon-down-dir.svg" alt="Стрелочка вниз">
-      </p>
+        <button>
+          <img src="img/icon-up-dir.svg" alt="Стрелочка вверх">
+        </button>
+        <button>
+          <img src="img/icon-down-dir.svg" alt="Стрелочка вниз">
+        </button>
     </section>
     <section>
       <h2>Результаты поиска</h2>
