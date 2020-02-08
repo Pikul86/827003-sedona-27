@@ -3,45 +3,59 @@
 
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Седона</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="main-header">
     <h1 class="visually-hidden">Город Седона</h1>
+    <div class="logo-nav">
     <img src="img/logo-sedona.svg" width="140" height="72" alt="Логотип города Седона">
-    <nav class="nav">
+    </div>
+    <nav>
       <ul class="block-nav">
-        <li class="block"><a href='#'>Информация</a></li>
-        <li class="block"><a href='#'>Фото и видео</a></li>
-        <li class="block"><a href='#'>Карта штата</a></li>
-        <li class="block"><a href='catalog.html'>Гостиницы</a></li>
+        <li class="block1"><a href='#'>Информация</a></li>
+        <li class="block1"><a href='#'>Фото и видео</a></li>
+        <li class="block2"><a href='#'>Карта штата</a></li>
+        <li class="block2"><a href='catalog.html'>Гостиницы</a></li>
       </ul>
     </nav>
   </header>
+ 
+ 
+ 
+ 
+ 
   <main>
-    <section class="sedona">
+    <section >
+      <div class="sedona">
       <h2 class="visually-hidden">Седона</h2>
-      <p>
-        <img src="img/background_photo.jpg" width="1200" height="800" alt="Добро пожаловать в Джорджию">
-      </p>
       <p>
         <img src="img/intro-welcome.svg" width="459" height="353" alt="Добро пожаловать в джорджию">
         <!--картинка Welcom-->
       </p>
-      <p>Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+      <div class="sedona-info">
+        <p>Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+      </div>
       <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      </div>
     </section>
     <section>
-      <h2>Настоящий городок</h2>
-      <p>— №1 —</p>
-      <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-      <img src="img/city.jpg" alt="фото города Седона">
+      <div class="city">
+        <h2>Настоящий городок</h2>
+        <p>— №1 —</p>
+        <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+      </div>  
+      <div class="city-img">
+          <img src="img/city.jpg" alt="фото города Седона">
+      </div>
     </section>
     <section>
-      <h2>Описание</h2>
-      <ul>
+      <h2 class="visually-hidden">Описание</h2>
+      <ul class="description">
         <li>
           <img src="img/icon-1.svg" alt="Картинка дом">
           <h3>Жильё</h3>
@@ -62,16 +76,16 @@
     <section>
       <div>
         <img src="img/bridge.jpg" alt="Фото КАНЬОН">
-      </div>
-      <div>
-        <h2>Там есть мост дьявола</h2>
-        <p>— №2 —</p>
-        <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+      </div> 
+      <div class="bridge-text"> 
+         <h2>Там есть мост дьявола</h2>
+         <p>— №2 —</p>
+         <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
       </div>
     </section>
     <section>
       <h2 class="visually-hidden">Преимущества</h2>
-      <ul>
+      <ul class="description down">
         <li>
           <h3>Небольшая площадь</h3>
           <p>— №3 —</p>
@@ -89,7 +103,17 @@
         </li>
       </ul>
     </section>
-    <section class="search">
+
+
+
+
+
+
+
+
+
+    <section>
+     <div class="search"> 
       <h2>Заинтересовались?</h2>
       <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
       <buton class="button-search" type="buton">поиск гостиницы в седоне</buton>
@@ -103,16 +127,14 @@
           <input class="date-departure" type="text" name="date-departure" id="date-departure" value="4 июля 2017"
             required>
         </div>
+     </div>
         <p>Взрослые:</p>
         <button type="button" class="svg-button">
           <svg>
             <line x1="13" y1="18" x2="25" y2="18" stroke="gray" stroke-width="3" />
           </svg>
         </button>
-        <div class="">
-          <label for="result"></label>
-          <input type="text" name="result" id="result" value="2">
-        </div>
+    
         <button type="button" class="svg-button">
           <svg>
             <line x1="13" y1="18" x2="25" y2="18" stroke="gray" stroke-width="3" />
@@ -137,26 +159,31 @@
         </button>
         <button class="" type="button">Найти</button>
       </form>
+      
     </section>
     <p><img src="img/map.jpg" alt="Карта Седоны"></p>
     <!--Узнать как потом карту сделать в javascript-->
   </main>
 
   <footer>
-    <p>
-      #visitSEDONA
-    </p>
-    <p>Тел: +7(495) 666-02-66</p>
-    <div>
+    <div class="visit">
+      <p>
+        #visitSEDONA
+      </p>
+      <p>Тел: +7(495) 666-02-66</p>
+    </div>
+    <div class="footer-social">
       <ul>
-        <li><a href="#"><img src="img/twitter.svg" alt="">Твиттер</a></li>
-        <li><a href="#"><img src="img/fb-icon.svg" alt="">Фейсбук</a></li>
-        <li><a href="#"><img src="img/youtube.svg" alt="">Ютуб</a></li>
+        <li><a class="social-button" href="#">Твиттер</a></li>
+        <li><a class="social-button" href="#">Фейсбук</a></li>
+        <li><a class="social-button" href="#">Ютуб</a></li>
       </ul>
     </div>
-    <p>Website by</p>
-    <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="115" height="41"
-        alt="Логотип Академии"></a>
+    <p class="footer-copyright">
+      <b>Website by</b>
+      <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="115" height="41"
+        alt="Логотип Академии"></a>  
+    </p>
   </footer>
 </body>
 
