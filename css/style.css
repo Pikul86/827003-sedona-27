@@ -194,6 +194,21 @@ h2 {
     padding-right: 46px;
 } 
 
+.city h2 {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 15px;
+    margin-bottom: 0;
+    word-break: break-all;
+}
+
+.city p {
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    word-break: break-all;
+}
+
 .city-img {
     width: 800px;
     height: 256px;
@@ -254,6 +269,19 @@ h3 {
     padding-right: 48px;
 }
 
+.bridge-text h2 {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 15px;
+    margin-bottom: 0;
+    word-break: break-all;
+}
+
+.bridge-text p {
+    margin-top: 20px;
+    word-break: break-all;
+}
+
 .section-description-down {
     width: 1200px;
     height: 256px;
@@ -292,6 +320,15 @@ ul.description-down  {
     margin-right: 44px;
 }
 
+.description-down-text-1 p {
+    margin-left: 47px;
+    margin-right: 47px;
+    word-break: break-all;
+    margin-top: 32px;
+    font-size: 14px;
+    line-height: 21px;
+}
+
 .description-down-text-2 {
     width: 306px;
     height: 166px;
@@ -299,6 +336,15 @@ ul.description-down  {
     margin-bottom: 40px;
     margin-left: 47px;
     margin-right: 47px;
+}
+
+.description-down-text-2 p {
+    margin-left: 21px;
+    margin-right: 21px;
+    word-break: break-all;
+    margin-top: 32px;
+    font-size: 14px;
+    line-height: 21px;
 }
 
 .description-down-text-3 {
@@ -310,11 +356,21 @@ ul.description-down  {
     margin-right: 52px;
 }
 
+.description-down-text-3 p {
+    margin-left: 21px;
+    margin-right: 21px;
+    word-break: break-all;
+    margin-top: 32px;
+    font-size: 14px;
+    line-height: 21px;
+}
+
 .section-search {
     width: 1200px;
     height: 233px;
     background-color: #ffffff;
     padding-top: 58px;
+    text-align: center;
 }
 
 .search {
@@ -328,25 +384,27 @@ ul.description-down  {
 .search h2 {
     margin: 0;
     font-size: 30px;
+    margin-bottom: 27px;
 }
 
-.button-search-container {
-    width: 290px;
-    background-color: #766357;
-    color: #ffffff;
-    text-align: center;
-    margin-top: 0;
-    margin-left: 316px;
-    margin-right: 316px;
+.search p {
     margin-bottom: 0;
-    font-size: 21px;
-    font-weight: bold;
-    line-height: 26px;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.button-search {
+    display: inline-block;
+    padding: 35px 140px;
+    text-align: center;
     vertical-align: middle;
-    padding-top: 35px;
-    padding-bottom: 33px;
-    padding-left: 139px;
-    padding-right: 139px;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 46px;
+    margin-bottom: 0;
+    color: #ffffff;
+    background-color: #766357;
 }
 
 .button-search:hover {
