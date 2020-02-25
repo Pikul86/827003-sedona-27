@@ -398,13 +398,15 @@ ul.description-down  {
     padding: 35px 140px;
     text-align: center;
     vertical-align: middle;
-
     margin-left: auto;
     margin-right: auto;
     margin-top: 46px;
     margin-bottom: 0;
     color: #ffffff;
     background-color: #766357;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
 }
 
 .button-search:hover {
@@ -558,57 +560,6 @@ p.map {
 .footer-logo:focus path {
     fill: #c9c8c8;
 }
-
-
-/*стили для страницы catalog*/
-
-.hotels ul {
-    list-style: none;
-}
-
-.hotels li {
-    border-top: 1px solid #e5e5e5;
-    border-bottom: 1px solid #e5e5e5;
-}
-
-.button-info {
-    width: 110px;
-    height: 27px;
-    text-align: center;
-    color: #ffffff;
-    background-color: #81b3d2;
-}
-
-.button-info:hover {
-    background-color: #669ec0;
-}
-
-.button-info:focus {
-    background-color: #5496bd;
-    color: 94b9d2;
-}
-
-.booking {
-    width: 142px;
-    height: 27px;
-    text-align: center;
-    color: #ffffff;
-    background-color: #766357;
-}
-.booking a {
-    color: #ffffff;
-}
-
-.booking:hover {
-    background-color: #604e43;
-}
-
-.booking:focus {
-    background-color: #503e33;
-    color: #928a85; 
-}
-
-
 
 
 /*Раздел с результатами поиска, где стоит цифра найденно*/
@@ -807,6 +758,60 @@ ul.stars {
 }
 
 
+/*стили для страницы catalog*/
 
+fieldset {
+    border: none;
+}
+
+fieldset ul {
+    list-style: none;
+}
+
+.hotels ul {
+    list-style: none;
+}
+
+.hotels li {
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.button-info {
+    width: 110px;
+    height: 27px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #81b3d2;
+}
+
+.button-info:hover {
+    background-color: #669ec0;
+}
+
+.button-info:focus {
+    background-color: #5496bd;
+    color: 94b9d2;
+}
+
+.booking {
+    width: 142px;
+    height: 27px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #766357;
+}
+.booking a {
+    color: #ffffff;
+}
+
+.booking:hover {
+    background-color: #604e43;
+}
+
+.booking:focus {
+    background-color: #503e33;
+    color: #928a85; 
+}
 
 
