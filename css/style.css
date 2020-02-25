@@ -158,6 +158,23 @@ h2 {
     position: absolute;
 }
 
+.sedona-info p:nth-child(1) {
+        margin-top: 45px;
+        margin-left: 380px;
+        margin-right: 380px;
+        line-height: 26px;
+        word-break: break-all;
+}
+
+.sedona-info p:nth-child(2) {
+    font-weight: 400;
+    margin-bottom: 57px;
+    margin-top: 28px;
+    font-size: 14px;
+    line-height: 26px;
+
+}
+
 .section-city {
     width: 1200px;
     height: 256px;
@@ -411,58 +428,42 @@ p.map {
     margin-bottom: 17px;
 }
 
+.social-button {
+    display: flex;
+    width: 46px;
+    height: 48px;
+    align-items: center;
+    justify-content: center;
+    background-color: #81b3d2;
+}
+
 .footer-social {
     text-align: center;
     width: 400px;
-    height: 84px;
-    margin-top: 36px;
+    justify-content: center;
 }
 
 .foter-social-container {
     display: flex;
-    text-align: center;
-}
-
-.footer-social ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
+    width: 150px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 36px;
 }
 
-.foter-social-container li {
-    width: 46px;
-    height: 48px;
-    background-color: #81b3d2;
-    margin-right: 6px;
-}
-
-.foter-social-container li:hover {
+.social-button:hover {
     background-color: #669ec0;
 }
 
-.foter-social-container li:focus {
+.social-button:focus {
     background-color: #5496bd;
 }
-
-.foter-social-container li:nth-child(1) {
-    background-image: url(../img/twitter.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    margin-left: 124px;
-}
-
-.foter-social-container li:nth-child(2) {
-    background-image: url(../img/fb-icon.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.foter-social-container li:nth-child(3) {
-    margin-right: 0;
-    background-image: url(../img/youtube.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    margin-right: 126px;
+.social-button:hover path,
+.social-button:focus path {
+    fill: #88b6d1;
 }
 
 .footer-copyright {
@@ -485,6 +486,19 @@ p.map {
     margin-left: 102px;
     margin-right: 9px;
     padding-top: 15px;
+}
+
+.footer-logo {
+    width: 115px;
+    margin-right: 91px;
+}
+
+.footer-logo:hover path {
+    fill: #98c1da;
+}
+
+.footer-logo:focus path {
+    fill: #c9c8c8;
 }
 
 
