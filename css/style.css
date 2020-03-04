@@ -100,6 +100,8 @@ h3 {
     padding-top: 14px;
 }
 
+
+
 .site-nav li:nth-child(2) {
    margin-right: auto;
 }
@@ -190,7 +192,6 @@ a.block2  {
     width: 1200px;
     height: 256px;
     display: flex;
-    margin-bottom: 60px;
 }
 
 .city {
@@ -229,8 +230,9 @@ a.block2  {
 
 .section-description {
     width: 1200px;
-    height: 263px;
-    padding: 0;
+    height: 330px;
+    box-sizing: border-box;
+    padding-top: 60px;
     margin: 0;
 }
 
@@ -270,7 +272,6 @@ a.block2  {
 .bridge-img {
     width: 800px;
     height: 256px;
-    margin-top: 7px;
     background-image: url("../img/bridge.jpg");
     background-repeat: no-repeat;
     background-size: 100% 400px;
@@ -287,7 +288,6 @@ a.block2  {
     padding-bottom: 41px;
     padding-left: 48px;
     padding-right: 48px;
-    margin-top: 7px;
 }
 
 .bridge-text h2 {
@@ -319,10 +319,9 @@ a.block2  {
 
 .description-down li {
     width: 400px;
-    height: 166px;
+    height: 206px;
     text-align: center;
-    margin-top: 25px;
-    margin-bottom: 40px;
+    margin-top: 18px;
 }
 
 .description-down h3 {
@@ -358,9 +357,10 @@ a.block2  {
 
 .section-search {
     width: 1200px;
-    height: 233px;
+    height: 290px;
+    box-sizing: border-box;
     background-color: #ffffff;
-    padding-top: 64px;
+    padding-top: 57px;
     text-align: center;
 }
 
@@ -388,7 +388,7 @@ a.block2  {
 
 .button-search {
     display: inline-block;
-    padding: 30px 141px;
+    padding: 30px 140px;
     text-align: center;
     vertical-align: middle;
     margin-left: auto;
@@ -399,7 +399,7 @@ a.block2  {
     background-color: #766357;
     border: 1px solid transparent;
     outline: none;
-    font-size: 18px;
+    font-size: 21px;
     line-height: 26px;
     font-weight: bold;
     text-transform: uppercase;
@@ -803,6 +803,9 @@ background-color: #a9a9a9;
     display: flex;
     width: 1200px;
     background-image: url(../img/filter\ _background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 500px;
+    background-position: 40% 15%;
     color: #ffffff;
     margin-top: -77px;
 }
