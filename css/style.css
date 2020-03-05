@@ -3,7 +3,7 @@ body {
     margin-right: auto;
     margin-top: 0px;
     padding: 0px;  
-    font-family: "PT SANS", Arial, sans-serif;
+    font-family: "PT SANS", "Arial", sans-serif;
     font-size: 14px;
     line-height: 21px;
     font-weight: 400;
@@ -50,7 +50,6 @@ h3 {
     font-size: 14px;
     line-height: 26px;
     color: #000000;
-    margin-bottom: 61px;
     height: 71px;
     width: 1200px;
 }
@@ -91,6 +90,8 @@ h3 {
 }
 
 .block1 {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
     width: 240px;
     height: 56px;
@@ -125,18 +126,31 @@ h3 {
 }
 
 a.block2  {
-    color: #766357 !important;
+    color: #766357;
+    cursor: not-allowed;
+}
+
+a.block2:hover   {
+    color: #766357;
+    cursor: not-allowed;
+}
+
+a.block2:focus   {
+    color: #766357;
     cursor: not-allowed;
 }
 
 .main-one-background {
     text-align: center;
+    background-color: #d9eaf2;
     background-image: url("../img/background-photo.jpg");
+    background-position: 50% 110%;
+    background-repeat: no-repeat;
     font-size: 14px;
     line-height: 26px;
     width: 1200px;
-    height: 779px;
-    margin-top: -132px;
+    height: 723px;
+    margin-top: -15px;
 }
 
 .welcom {
@@ -144,7 +158,7 @@ a.block2  {
     display: block;
     width: 1200px;
     height: 432px;
-    padding-top: 131px;
+    padding-top: 75px;
 }
 
 .welcom::after {
@@ -161,6 +175,8 @@ a.block2  {
 }
 
 .main-one-info {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
     font-size: 21px;
     line-height: 26px;
@@ -223,6 +239,7 @@ a.block2  {
     width: 800px;
     height: 256px;
     background-image: url(../img/city.jpg);
+    background-color: #c6cfbc;
     background-repeat: no-repeat;
     background-size: 100% 400px;
     background-position: 30% 52%;
@@ -231,6 +248,8 @@ a.block2  {
 .section-description {
     width: 1200px;
     height: 330px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
     padding-top: 60px;
     margin: 0;
@@ -249,6 +268,8 @@ a.block2  {
     width: 400px;
     height: 256px;
     text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
     padding-top: 0;
 }
@@ -273,6 +294,7 @@ a.block2  {
     width: 800px;
     height: 256px;
     background-image: url("../img/bridge.jpg");
+    background-color: #698494;
     background-repeat: no-repeat;
     background-size: 100% 400px;
     background-position: 30% 52%;
@@ -358,6 +380,8 @@ a.block2  {
 .section-search {
     width: 1200px;
     height: 290px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
     background-color: #ffffff;
     padding-top: 57px;
@@ -379,6 +403,8 @@ a.block2  {
 }
 
 .search p {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
     padding-top: 3px;
     margin-bottom: 0;
@@ -388,7 +414,7 @@ a.block2  {
 
 .button-search {
     display: inline-block;
-    padding: 30px 140px;
+    padding: 30px 138px;
     text-align: center;
     vertical-align: middle;
     margin-left: auto;
@@ -455,6 +481,8 @@ a.block2  {
 }
 
 .date input {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
     padding-left: 13px;
     padding-right: 40px;
@@ -515,6 +543,8 @@ a.block2  {
 .adults,
 .kids {
     display: flex;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
     padding-top: 6px;
     width: 230px;
@@ -532,6 +562,8 @@ a.block2  {
 }
 
 .kids {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
     padding-left: 50px;
 }
@@ -541,6 +573,8 @@ a.block2  {
 }
 
 .container-modal-results {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
     width: 38px;
     height: 38px;
@@ -688,7 +722,7 @@ background-color: #a9a9a9;
 
 .main-footer {
     width: 1200px;
-    height: 120px;
+    height: 115px;
     margin-top: 0;
 }
 
@@ -698,6 +732,7 @@ background-color: #a9a9a9;
 }
 
 .visit {
+    position: relative;
     width: 400px;
     height: 115px;
     text-align: center;
@@ -705,18 +740,29 @@ background-color: #a9a9a9;
     font-size: 21px;
     line-height: 26px;
     text-transform: uppercase;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
-    padding-top: 26px;
+    padding-top: 27px;
 }
 
 .visit p:nth-child(1) {
+    position: absolute;
     width: 400px;
+    top: 26px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
-    padding-right: 13px;
+    padding-right: 15px;
 }
 
-.visit p:nth-child(2) {
+.visit a {
+    position: absolute;
+    top: 53px;
+    left: -2px;
     width: 400px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
     padding-top: 5px;
     padding-left: 75px;
@@ -772,6 +818,8 @@ background-color: #a9a9a9;
 .footer-copyright p {
     font-size: 14px;
     font-weight: 400;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
     padding-top: 9px; 
 }
@@ -802,18 +850,20 @@ background-color: #a9a9a9;
 .filter {
     display: flex;
     width: 1200px;
+    height: 219px;
     background-image: url(../img/filter\ _background.jpg);
+    background-color: #729abe;
     background-repeat: no-repeat;
     background-size: 100% 500px;
     background-position: 40% 15%;
     color: #ffffff;
-    margin-top: -77px;
+    margin-top: -16px;
 }
 
 fieldset {
     border: none;
     width: 300px;
-    height: 217px;
+    height: 219px;
     padding: 0;
     margin: 0;
 }
@@ -831,7 +881,7 @@ fieldset legend {
     line-height: 21px;
     margin-left: 72px;
     margin-bottom: 28px;
-    padding-top: 26px;
+    padding-top: 28px;
 }
 
 fieldset.type {
@@ -853,22 +903,19 @@ fieldset li {
 
 .filters {
     display: flex;
-    width: 600px;
-    height: 217px;
+    width: 1200px;
+    height: 219px;
 }
 
 .filter-option label {
     position: relative;
-  
     display: block;
-  
     cursor: pointer;
     user-select: none;
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
 }
-
 
 .filter-input-checkbox + label::before {
     content: "";
@@ -877,8 +924,6 @@ fieldset li {
     top: -2px;
     width: 23px;
     height: 23px;
-  
-    
     background-image: url("../img/checkbox-off.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -888,8 +933,7 @@ fieldset li {
     width: 28px;
     height: 28px;
     opacity: 0.2;
-
-    background-image: url("../img/checkbox-on.svg")
+    background-image: url("../img/checkbox-on.svg");
 }
 
 .filter-option:hover {
@@ -909,7 +953,7 @@ fieldset li {
     width: 328px;
     height: 185px;
     margin-left: auto;
-    margin-right: 62px;
+    margin-right: 16px;
 }
 
 .form-filter p {
@@ -917,7 +961,7 @@ fieldset li {
     font-size: 16px;
     font-weight: 600;
     line-height: 21px;
-    margin-bottom: 10px;
+    margin-bottom: 11px;
 }
 
 .price-controls {
@@ -966,7 +1010,7 @@ fieldset li {
 
 .range-controls {
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 32px;
 }
   
 .range-controls .scale {
@@ -1007,7 +1051,7 @@ fieldset li {
 .btn-transparent {
     display: block;
     margin: 0 85px;
-    padding: 6px 35px;
+    padding: 6px 38px;
     font-size: 12px;
     line-height: 20px;
     color: #ffffff;
@@ -1128,7 +1172,7 @@ fieldset li {
 .results-list li:nth-child(4),
 .results-list li:nth-child(5)  {
     margin-top: 35px;
-    margin-right: 12px;
+    margin-right: 20px;
     font-size: 12px;
     font-weight: 400;
     line-height: 18px;
@@ -1182,11 +1226,9 @@ fieldset li {
 
 .results-button button:nth-child(2) {
     margin-right: 66px;
-    margin-top: 37px;
+    margin-top: 35px;
     margin-left: 2px;
 }
-
-/*Секция с картинками отелей*/
 
 .hotels {
     width: 1200px;
@@ -1206,7 +1248,7 @@ fieldset li {
 .container-hotels {
     display: flex;
     width: 1200px;
-    height: 152px;
+    height: 151px;
 }
 
 li.hotels-1  {
@@ -1234,7 +1276,7 @@ li.colums {
 }
 
 .colums h3 {
-    margin-bottom: 6px;
+    margin-bottom: 9px;
     cursor: pointer;
     font-size: 22px;
 }
@@ -1254,7 +1296,7 @@ li.colums {
 .price {
     display: flex;
     flex-direction: row;
-    margin-bottom: 6px;
+    margin-bottom: 4px;
 }
 
 .price p:nth-child(1) {
@@ -1267,14 +1309,14 @@ li.rating {
     position: relative;
     width: 690px;
     height: 122px;
-    margin-top: 30px;
+    margin-top: 29px;
     border: none;
     text-align: right;
 }
  
 ul.stars {
     display: inline-flex;
-    margin-right: 70px;
+    margin-right: 68px;
 }
 
 .stars li {
@@ -1284,8 +1326,8 @@ ul.stars {
 
 .rating p {
     position: absolute;
-    top: 64px;
-    right: 70px;
+    top: 66px;
+    right: 69px;
     width: 110px;
     height: 24px;
     text-align: center;
