@@ -6,7 +6,7 @@
   <title>HTML Academy: Седона</title>
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style-mini.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -31,7 +31,7 @@
       <section class="filter">
         <h2 class="visually-hidden">Параметры</h2>
         <form class="filters" method="get" action="https://echo.htmlacademy.ru">
-          <fieldset>
+          <fieldset class="type">
             <legend>Инфраструктура:</legend>
             <ul>
               <li class="filter-option">
@@ -41,7 +41,7 @@
               </li>
               <li class="filter-option">
                 <input type="checkbox" class="visually-hidden filter-input-checkbox" name="parking"
-                  id="parking-field">
+                  id="parking-field" disabled>
                 <label for="parking-field">Парковка</label>
               </li>
               <li class="filter-option">
@@ -56,7 +56,7 @@
             <ul>
               <li class="filter-option">
                 <input type="checkbox" class="visually-hidden filter-input-checkbox" name="hotel"
-                  id="hotel-field" checked>
+                  id="hotel-field" checked disabled>
                 <label for="hotel-field">Гостиница</label>
               </li>
               <li class="filter-option">
@@ -75,8 +75,8 @@
           <div class="form-filter">
             <p>Стоимость в сутки (Р):</p>
             <div class="price-controls">
-              <label class="min-price">от <input type="number" name="min-price" value="0"></label>
-              <label class="max-price">до <input type="number" name="max-price" value="3000"></label>
+              <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+              <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
             </div>
             <div class="range-controls">
               <div class="scale">
@@ -131,7 +131,7 @@
             <li class="hotels-1">
               <ul class="container-hotels">
                 <li class="img-hotel-1">
-                  <img src="img/Amara_rezort.jpg" width="135" height="90" alt="AMARA RESORT & SPA">
+                  <img src="img/amara_rezort.jpg" width="135" height="90" alt="AMARA RESORT & SPA">
                 </li>
                 <li class="colums">
                   <h3><a href="#">AMARA RESORT & SPA</a></h3>
@@ -139,9 +139,9 @@
                     <p>ГОСТИНИЦА</p>
                     <p>ОТ 4000 Р.</p>
                   </div>
-                  <div>
+                  <div class="button-booking">
                     <button type="button" class="button-info">ПОДРОБНЕЕ</button>
-                    <button type="button" class="button-booking">ЗАБРОНИРОВАТЬ</button>
+                    <a href="#">ЗАБРОНИРОВАТЬ</a>
                   </div>
                 </li>
                 <li class="rating">
@@ -158,7 +158,7 @@
             <li class="hotels-1">
               <ul class="container-hotels">
                 <li class="img-hotel-1">
-                  <img src="img/Desert_inn.jpg" width="135" height="90" alt="DESERT QUAIL INN">
+                  <img src="img/desert_inn.jpg" width="135" height="90" alt="DESERT QUAIL INN">
                 </li>
                 <li class="colums">
                   <h3><a href="#">DESERT QUAIL INN</a></h3>
@@ -166,9 +166,9 @@
                     <p>МОТЕЛЬ</p>
                     <p>ОТ 3000 Р.</p>
                   </div>
-                  <div>
+                  <div class="button-booking">
                     <button type="button" class="button-info">ПОДРОБНЕЕ</button>
-                    <button type="button" class="button-booking">ЗАБРОНИРОВАТЬ</button>
+                    <a href="#">ЗАБРОНИРОВАТЬ</a>
                   </div>
                 </li>
                 <li class="rating">
@@ -184,7 +184,7 @@
             <li class="hotels-1">
               <ul class="container-hotels">
                 <li class="img-hotel-1">
-                  <img src="img/Villas_poco.jpg" width="135" height="90" alt="VILLAS AT POCO DIABLO">
+                  <img src="img/villas_poco.jpg" width="135" height="90" alt="VILLAS AT POCO DIABLO">
                 </li>
                 <li class="colums">
                   <h3><a href="#">VILLAS AT POCO DIABLO</a></h3>
@@ -192,9 +192,9 @@
                     <p>АПАРТАМЕНТЫ</p>
                     <p>ОТ 2000 Р.</p>
                   </div>
-                  <div>
+                  <div class="button-booking">
                     <button type="button" class="button-info">ПОДРОБНЕЕ</button>
-                    <button type="button" class="button-booking">ЗАБРОНИРОВАТЬ</button>
+                    <a href="#">ЗАБРОНИРОВАТЬ</a>
                   </div>
                 </li>
                 <li class="rating">
@@ -213,7 +213,7 @@
     <footer class="main-footer">
       <div class="footer-container">
         <div class="visit">
-          <p>#visitSEDONA</p>
+          <p>#visitsedona</p>
           <a href="tel:+74956660266">Тел: +7(495) 666-02-66</a>
         </div>
         <div class="footer-social">
@@ -227,10 +227,9 @@
               </a></li>
             <li><a class="social-button" href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22">
-                  <path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z" /></svg>
-
+                  <path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z" />
+                </svg>
               </a></li>
-
             <li><a class="social-button" href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20"
                   height="16" viewBox="0 0 20 16">

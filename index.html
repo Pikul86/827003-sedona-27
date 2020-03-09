@@ -6,7 +6,7 @@
   <title>HTML Academy: Седона</title>
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style-mini.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -67,8 +67,8 @@
             </div>
           </li>
           <li>
-            <img src="img/icon-2.svg" width="74" height="70" alt="Подарок">
-            <div class="description-text">
+            <img src="img/icon-2.svg" width="64" height="76" alt="Подарок">
+            <div class="description-text-1">
               <h3>Сувениры</h3>
               <p>Не только китайского, но и местного производства!</p>
             </div>
@@ -118,11 +118,11 @@
         </div>
         <button class="button-search" type="button">Поиск гостиницы в седоне</button>
       </section>
-      <section class="modal modal-close">
+      <section class="modal">
         <h2 class="visually-hidden">Форма поиска</h2>
         <div class="date">
-          <label>Дата заезда:<input class="date-arrival" type="text" name="date-arrival" value="24 апреля 2017"></label>
-          <label>Дата выезда:<input class="date-departure" type="text" name="date-departure"
+          <label class="date-1">Дата заезда:<input class="date-arrival" type="text" name="date-arrival" value="24 апреля 2017"></label>
+          <label class="date-2">Дата выезда:<input class="date-departure" type="text" name="date-departure"
               value="4 июля 2017"></label>
           <button class="calendar">
             <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
@@ -149,7 +149,8 @@
                 <button class="minus" type="button"></button>
               </div>
               <div class="container-modal-results center">
-                <p>2</p>
+                  <label class="visually-hidden min-adults"></label>
+                  <input type="text" name="min-adults" value="2">
               </div>
               <div class="container-modal-results">
                 <button class="plus" type="button"></button>
@@ -163,10 +164,11 @@
                 <button class="minus" type="button"></button>
               </div>
               <div class="container-modal-results center">
-                <p>0</p>
+                  <label class="visually-hidden min-adults"></label>
+                  <input type="text" name="min-adults" value="0">
               </div>
               <div class="container-modal-results">
-                <button class="plus2" type="button"></button>
+                <button class="plus" type="button"></button>
               </div>
             </div>
           </div>
@@ -180,7 +182,7 @@
     <footer class="main-footer">
       <div class="footer-container">
         <div class="visit">
-          <p>#visitSEDONA</p>
+          <p>#visitsedona</p>
           <a href="tel:+74956660266">Тел: +7(495) 666-02-66</a>
         </div>
         <div class="footer-social">
@@ -194,10 +196,9 @@
               </a></li>
             <li><a class="social-button" href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22">
-                  <path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z" /></svg>
-
+                  <path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z" />
+                </svg>
               </a></li>
-
             <li><a class="social-button" href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20"
                   height="16" viewBox="0 0 20 16">
@@ -220,7 +221,7 @@
         </div>
       </div>
     </footer>
-    <script src="js/popup-mini.js"></script>
+    <script src="js/popup.js"></script>
   </div>
 </body>
 
