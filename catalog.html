@@ -16,13 +16,26 @@
         <h1 class="visually-hidden">Город Седона</h1>
         <div class="site-nav-wrapper">
           <ul class="site-nav">
-            <li class="block1"><a href="#">Информация</a></li>
-            <li class="block1"><a href="#">Фото и видео</a></li>
-            <li class="block1"><a href="#">Карта штата</a></li>
-            <li class="block1"><a class="block2" href="#">Гостиницы</a></li>
+            <li class="block1">
+              <span class="visually-hidden">Ссылка на страницу информации</span>
+              <a href="#">Информация</a>
+            </li>
+            <li class="block1">
+              <span class="visually-hidden">Ссылка на страницу фото и видео</span>
+              <a href="#">Фото и видео</a>
+            </li>
+            <li class="block1">
+              <span class="visually-hidden">Ссылка на страницу карта штата</span>
+              <a href="#">Карта штата</a>
+            </li>
+            <li class="block1">
+              <span class="visually-hidden">Ссылка на страницу гостиницы</span>
+              <a class="block2" href="#">Гостиницы</a>
+            </li>
           </ul>
         </div>
         <div class="main-header-logo">
+          <span class="visually-hidden">Ссылка на главную страницу</span>
           <a href="index.html"><img src="img/logo-sedona.svg" width="140" height="72" alt="Логотип города Седона"></a>
         </div>
       </nav>
@@ -35,16 +48,19 @@
             <legend>Инфраструктура:</legend>
             <ul>
               <li class="filter-option">
+                <span class="visually-hidden">чекбокс выбора бассейна</span>
                 <input type="checkbox" class="visually-hidden filter-input-checkbox" name="pool"
                   id="pool-field" checked>
                 <label for="pool-field">Бассейн</label>
               </li>
               <li class="filter-option">
+                <span class="visually-hidden">чекбокс выбора парковки</span>
                 <input type="checkbox" class="visually-hidden filter-input-checkbox" name="parking"
                   id="parking-field" disabled>
                 <label for="parking-field">Парковка</label>
               </li>
               <li class="filter-option">
+                <span class="visually-hidden">чекбокс выбора wifi</span>
                 <input type="checkbox" class="visually-hidden filter-input-checkbox" name="wifi"
                   id="wifi-field">
                 <label for="wifi-field">Wi-Fi</label>
@@ -55,16 +71,19 @@
             <legend>Тип жилья:</legend>
             <ul>
               <li class="filter-option">
+                <span class="visually-hidden">чекбокс выбора гостиницы</span>
                 <input type="checkbox" class="visually-hidden filter-input-checkbox" name="hotel"
                   id="hotel-field" checked disabled>
                 <label for="hotel-field">Гостиница</label>
               </li>
               <li class="filter-option">
+                <span class="visually-hidden">чекбокс выбора мотели</span>
                 <input type="checkbox" class="visually-hidden filter-input-checkbox" name="motel"
                   id="motel-field" checked>
                 <label for="motel-field">Мотель</label>
               </li>
               <li class="filter-option">
+                <span class="visually-hidden">чекбокс выбора апартаменты</span>
                 <input type="checkbox" class="visually-hidden filter-input-checkbox" name="appartment"
                   id="appartment-field" checked>
                 <label for="appartment-field">Апартаменты</label>
@@ -85,7 +104,10 @@
               <div class="range-toggle range-toggle-min"></div>
               <div class="range-toggle range-toggle-max"></div>
             </div>
-            <button class="btn-transparent" type="submit">Показать</button>
+            <button class="btn-transparent" type="submit">
+              <span class="visually-hidden">кнопка показать результат</span>
+              Показать
+            </button>
           </div>
         </div>
       </form>
@@ -101,22 +123,33 @@
               <p>Сортировка:</p>
             </li>
             <li>
-              <button class="results-list-button list-btn1">По цене</button>
+              <button class="results-list-button list-btn1">
+                <span class="visually-hidden">сортировка по цене</span>
+                По цене
+              </button>
             </li>
             <li>
-              <button class="results-list-button list-btn2">По типу</button>
+              <button class="results-list-button list-btn2">
+                <span class="visually-hidden">сортировка по типу</span>
+                По типу
+              </button>
             </li>
             <li>
-              <button class="results-list-button list-btn2">По рейтингу</button>
+              <button class="results-list-button list-btn2">
+                <span class="visually-hidden">сортировка по рейтингу</span>
+                По рейтингу
+              </button>
             </li>
           </ul>
           <p class="results-button">
             <button>
+              <span class="visually-hidden">стрелка пролистывания результата поиска вверх</span>
               <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
                 <path fill="#cacaca" d="M5.5 0L0 10h11z" />
               </svg>
             </button>
             <button>
+              <span class="visually-hidden">стрелка пролистывания результата поиска вниз</span>
               <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
                 <path fill="#81b3d2" d="M5.5 10L0 0h11" />
               </svg>
@@ -140,8 +173,14 @@
                     <p>ОТ 4000 Р.</p>
                   </div>
                   <div class="button-booking">
-                    <button type="button" class="button-info">ПОДРОБНЕЕ</button>
-                    <a href="#">ЗАБРОНИРОВАТЬ</a>
+                    <button type="button" class="button-info">
+                      <span class="visually-hidden">кнопка показать подробнее</span>
+                      ПОДРОБНЕЕ
+                    </button>
+                    <a href="#">
+                      <span class="visually-hidden">ссылка на окно бронирования</span>
+                      ЗАБРОНИРОВАТЬ
+                    </a>
                   </div>
                 </li>
                 <li class="rating">
@@ -167,8 +206,14 @@
                     <p>ОТ 3000 Р.</p>
                   </div>
                   <div class="button-booking">
-                    <button type="button" class="button-info">ПОДРОБНЕЕ</button>
-                    <a href="#">ЗАБРОНИРОВАТЬ</a>
+                    <button type="button" class="button-info">
+                      <span class="visually-hidden">кнопка показать подробнее</span>
+                      ПОДРОБНЕЕ
+                    </button>
+                    <a href="#">
+                      <span class="visually-hidden">ссылка на окно бронирования</span>
+                      ЗАБРОНИРОВАТЬ
+                    </a>
                   </div>
                 </li>
                 <li class="rating">
@@ -193,8 +238,14 @@
                     <p>ОТ 2000 Р.</p>
                   </div>
                   <div class="button-booking">
-                    <button type="button" class="button-info">ПОДРОБНЕЕ</button>
-                    <a href="#">ЗАБРОНИРОВАТЬ</a>
+                    <button type="button" class="button-info">
+                      <span class="visually-hidden">кнопка показать подробнее</span>
+                      ПОДРОБНЕЕ
+                    </button>
+                    <a href="#">
+                      <span class="visually-hidden">ссылка на окно бронирования</span>
+                      ЗАБРОНИРОВАТЬ
+                    </a>
                   </div>
                 </li>
                 <li class="rating">
@@ -214,34 +265,47 @@
       <div class="footer-container">
         <div class="visit">
           <p>#visitsedona</p>
-          <a href="tel:+74956660266">Тел: +7(495) 666-02-66</a>
+          <a href="tel:+74956660266">
+            <span class="visually-hidden">ссылка на телефон</span>
+            Тел: +7(495) 666-02-66
+          </a>
         </div>
         <div class="footer-social">
           <ul class="foter-social-container">
-            <li><a class="social-button" href="#">
+            <li>
+              <span class="visually-hidden">ссылка на твиттер</span>
+              <a class="social-button" href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17"
                   height="15" viewBox="0 0 17 15">
                   <path fill="#FFF"
                     d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z" />
                 </svg>
-              </a></li>
-            <li><a class="social-button" href="#">
+              </a>
+            </li>
+            <li>
+              <span class="visually-hidden">ссылка на фейсбук</span>
+              <a class="social-button" href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22">
                   <path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z" />
                 </svg>
-              </a></li>
-            <li><a class="social-button" href="#">
+              </a>
+            </li>
+            <li>
+              <span class="visually-hidden">ссылка на ютуб</span>
+              <a class="social-button" href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20"
                   height="16" viewBox="0 0 20 16">
                   <path fill="#FFF" d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 
                       8l-8.987 3.998z" />
                 </svg>
-              </a></li>
+              </a>
+            </li>
           </ul>
         </div>
         <div class="footer-copyright">
           <p class="website">Website by</p>
           <a class="footer-logo" href="https://htmlacademy.ru/intensive/htmlcss">
+            <span class="visually-hidden">ссылка на курс htmlacademy</span>
             <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108.08 36.85">
               <title>logo-htmlacademy-small1</title>
               <path
