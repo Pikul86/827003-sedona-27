@@ -1,1 +1,1 @@
-var link=document.querySelector(".button-search"),popup=document.querySelector(".modal");link.addEventListener("click",function(e){e.preventDefault(),popup.classList.toggle("modal-show")});
+var link=document.querySelector(".button-search"),popup=document.querySelector(".modal");popup.classList.add("modal-close"),link.addEventListener("click",function(e){e.preventDefault(),popup.classList.toggle("modal-close")});
