@@ -788,6 +788,7 @@ img {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     padding-left: 123px;
+    padding-right: 53px;
     text-align: start;
     font-size: 21px;
     line-height: 26px;
